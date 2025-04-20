@@ -331,40 +331,22 @@
     }
 }
 
-/* Hide the submenu by default */
-.dropdown-submenu .dropdown-menu {
+.dropdown-menu li {
+    position: relative;
+    }
+    .dropdown-menu .dropdown-submenu {
     display: none;
     position: absolute;
-    top: 0;
     left: 100%;
-    margin-top: 0;
-    margin-left: 0.15rem;
-    border-radius: 0.5rem;
-    z-index: 1000;
-}
-
-/* Show the submenu only on hover of .dropdown-submenu */
-.dropdown-submenu:hover .dropdown-menu {
+    top: -7px;
+    }
+    .dropdown-menu .dropdown-submenu-left {
+    right: 100%;
+    left: auto;
+    }
+    .dropdown-menu > li:hover > .dropdown-submenu {
     display: block;
-}
-
-/* Make sure the submenu container is relative */
-.dropdown-submenu {
-    position: relative;
-}
-.dropdown-submenu .dropdown-menu.show {
-    display: none !important;
-}
-
-
-/* Optional: add an arrow to indicate submenu */
-.dropdown-submenu > .dropdown-item::after {
-    content: " \f105";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    float: right;
-}
-
+    }
 /*** Carousel Hero Header Start ***/
 .header-carousel {
     position: relative; 
