@@ -322,36 +322,37 @@
 
         <script>
             document.addEventListener('DOMContentLoaded', function () {
-                // Get all dropdown toggles
-                var dropdownToggles = document.querySelectorAll('.dropdown-toggle');
-        
+                var dropdownToggles = document.querySelectorAll('.navbar .dropdown-toggle');
+            
                 dropdownToggles.forEach(function(toggle) {
                     toggle.addEventListener('click', function(e) {
-                        e.preventDefault(); // prevent default behavior (like "#" link)
-                        
                         var parent = this.parentElement;
-        
-                        // Close other open dropdowns
-                        document.querySelectorAll('.nav-item.dropdown').forEach(function(item) {
-                            if (item !== parent) {
-                                item.classList.remove('show');
-                                var dropdownMenu = item.querySelector('.dropdown-menu');
-                                if (dropdownMenu) {
-                                    dropdownMenu.classList.remove('show');
-                                }
-                            }
-                        });
-        
-                        // Toggle current dropdown
-                        parent.classList.toggle('show');
                         var dropdownMenu = parent.querySelector('.dropdown-menu');
+            
                         if (dropdownMenu) {
+                            // Only prevent default if a submenu exists
+                            e.preventDefault();
+            
+                            // Close other open dropdowns
+                            document.querySelectorAll('.navbar .nav-item.dropdown, .navbar .dropdown-submenu').forEach(function(item) {
+                                if (item !== parent) {
+                                    item.classList.remove('show');
+                                    var itemDropdownMenu = item.querySelector('.dropdown-menu');
+                                    if (itemDropdownMenu) {
+                                        itemDropdownMenu.classList.remove('show');
+                                    }
+                                }
+                            });
+            
+                            // Toggle current dropdown
+                            parent.classList.toggle('show');
                             dropdownMenu.classList.toggle('show');
                         }
+                        // Else, no dropdown-menu: it's a real link, let browser navigate!
                     });
                 });
             });
-        </script>
+            </script>
         <script>
             window.addEventListener('scroll', function() {
                 var navbar = document.querySelector('.navbar');
