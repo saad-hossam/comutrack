@@ -41,36 +41,36 @@
         <!-- Spinner End -->
 
 
-         <!-- Topbar Start -->
-    <div class="container-fluid bg-dark px-5 d-none d-lg-block">
-        <div class="row gx-0 align-items-center" style="height: 45px;">
-            <div class="col-lg-8 text-center text-lg-start mb-lg-0">
-                <div class="d-flex flex-wrap">
-                    <a href="#" class="text-light me-5"><i class="fas fa-map-marker-alt text-primary me-2"></i>Find A Location : </a>
-                    <a href="#" class="text-light me-5"><i class="fas fa-phone-alt text-primary me-2"></i>+01234567890</a>
-                    <a href="#" class="text-light me-5"><i class="fas fa-print text-primary me-2"></i>+01234567890</a>
-                    
-                    <a href="#" class="text-light me-0"><i class="fas fa-envelope text-primary me-2"></i>info@computrack.com.eg</a>
+        <!-- Topbar Start -->
+        <div class="container-fluid bg-dark px-5 d-none d-lg-block">
+            <div class="row gx-0 align-items-center" style="height: 45px;">
+                <div class="col-lg-8 text-center text-lg-start mb-lg-0">
+                    <div class="d-flex flex-wrap">
+                        <a href="#" class="text-light me-5"><i class="fas fa-map-marker-alt text-primary me-2"></i>Find A Location : </a>
+                        <a href="#" class="text-light me-5"><i class="fas fa-phone-alt text-primary me-2"></i>+01234567890</a>
+                        <a href="#" class="text-light me-5"><i class="fas fa-print text-primary me-2"></i>+01234567890</a>
+                        
+                        <a href="#" class="text-light me-0"><i class="fas fa-envelope text-primary me-2"></i>info@computrack.com.eg</a>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-4 text-center text-lg-end">
-                <div class="d-flex align-items-center justify-content-end">
-                    <a href="#" class="btn btn-light btn-square border rounded-circle nav-fill me-3"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="btn btn-light btn-square border rounded-circle nav-fill me-3"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="btn btn-light btn-square border rounded-circle nav-fill me-3"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="btn btn-light btn-square border rounded-circle nav-fill me-0"><i class="fab fa-linkedin-in"></i></a>
+                <div class="col-lg-4 text-center text-lg-end">
+                    <div class="d-flex align-items-center justify-content-end">
+                        <a href="#" class="btn btn-light btn-square border rounded-circle nav-fill me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn btn-light btn-square border rounded-circle nav-fill me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="btn btn-light btn-square border rounded-circle nav-fill me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="btn btn-light btn-square border rounded-circle nav-fill me-0"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Topbar End -->
+        <!-- Topbar End -->
 
 
-<!-- Navbar & Hero Start -->
+     <!-- Navbar & Hero Start -->
 <div class="container-fluid position-relative p-0">
     <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
         <a href="index.html" class="navbar-brand p-0">
-            <img src="img/computrack LOGO_PNG.png" style="max-width: 120%; height: 60px; margin-top:10px; margin-bottom:5px" alt="Logo">
+            <img src="img/computrack LOGO_PNG.png" style="max-width: 120%; height: 80px;" alt="Logo">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="fa fa-bars"></span>
@@ -139,10 +139,50 @@
 </div>
 <!-- Navbar & Hero End -->
 
-
-
+<style>
+    .navbar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        background: transparent;
+    }
+    .navbar.scrolled {
+        background: #ffffff !important;
+        transition: background 0.3s ease-in-out;
+    }
+    </style>
           
- 
+    <!-- Carousel Start -->
+    <div class="header-carousel owl-carousel">
+        <div class="header-carousel-item">
+            <img src="img/slide1-home1.jpg" class="img-fluid w-99" alt="Image">
+            <div class="carousel-caption">
+                <div class="carousel-caption-content p-3">
+                    <h5 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">Physiotherapy Center</h5>
+                    <h1 class="display-1 text-capitalize text-white mb-4">Best Solution For Painful Life</h1>
+                    <p class="mb-5 fs-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                    </p>
+                    <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="#">Book Appointment</a>
+                </div>
+            </div>
+        </div>
+        <div class="header-carousel-item">
+            <img src="img/slide3-home1.jpg" class="img-fluid w-99" alt="Image">
+            <div class="carousel-caption">
+                <div class="carousel-caption-content p-3">
+                    <h5 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">Physiotherapy Center</h5>
+                    <h1 class="display-1 text-capitalize text-white mb-4">Best Solution For Painful Life</h1>
+                    <p class="mb-5 fs-5 animated slideInDown">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                    </p>
+                    <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="#">Book Appointment</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
         <!-- Services Start -->
         <!-- <div class="container-fluid service py-5">
             <div class="container py-5">
