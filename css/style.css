@@ -196,7 +196,17 @@
 }
 /*** Topbar End ***/
 
-
+    /* لازم عشان يظهر السب منيو */
+    .dropdown-submenu .dropdown-menu {
+        display: none;
+        position: static;
+        margin-left: 1rem;
+        margin-top: 0.5rem;
+    }
+    
+    .dropdown-submenu.show > .dropdown-menu {
+        display: block;
+    }
 
 /*** Navbar ***/
     /* Handle dropdown submenu */

@@ -343,34 +343,34 @@
 
             <script>
                 document.addEventListener('DOMContentLoaded', function () {
+                    // لما تضغط على أي dropdown-toggle
                     var dropdownToggles = document.querySelectorAll('.navbar .dropdown-toggle');
                 
                     dropdownToggles.forEach(function(toggle) {
                         toggle.addEventListener('click', function(e) {
                             var parent = this.parentElement;
-                            var dropdownMenu = parent.querySelector('.dropdown-menu');
                 
-                            if (dropdownMenu) {
-                                // Only prevent default if a submenu exists
-                                e.preventDefault();
+                            if (parent.classList.contains('dropdown-submenu') || parent.classList.contains('dropdown')) {
+                                e.preventDefault(); // امنع التنقل لو فيه submenu
                 
-                                // Close other open dropdowns
-                                document.querySelectorAll('.navbar .nav-item.dropdown, .navbar .dropdown-submenu').forEach(function(item) {
-                                    if (item !== parent) {
-                                        item.classList.remove('show');
-                                        var itemDropdownMenu = item.querySelector('.dropdown-menu');
-                                        if (itemDropdownMenu) {
-                                            itemDropdownMenu.classList.remove('show');
-                                        }
-                                    }
-                                });
-                
-                                // Toggle current dropdown
                                 parent.classList.toggle('show');
-                                dropdownMenu.classList.toggle('show');
+                
+                                // هات السب منيو اللي تحته وافتحه
+                                var submenu = parent.querySelector('.dropdown-menu');
+                                if (submenu) {
+                                    submenu.classList.toggle('show');
+                                }
                             }
-                            // Else, no dropdown-menu: it's a real link, let browser navigate!
                         });
+                    });
+                
+                    // لو ضغطت برا، اقفل أي منيو مفتوح
+                    document.addEventListener('click', function (e) {
+                        if (!e.target.closest('.navbar')) {
+                            document.querySelectorAll('.navbar .show').forEach(function (openDropdown) {
+                                openDropdown.classList.remove('show');
+                            });
+                        }
                     });
                 });
                 </script>
