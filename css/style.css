@@ -969,15 +969,15 @@
 }
 
 .blog .blog-item:hover .blog-img::after {
-    background: #255ea0;
+    /* background: #255ea0; */
 }
 
 .blog .blog-item .blog-centent {
     background: var(--bs-light);
     border: 1px solid var(--bs-primary);
-    /* border-top: 0; */
-    border-radius: 10px;
-    /* border-bottom-right-radius: 10px; */
+    border-top: 0;
+    /* border-radius: 10px; */
+    border-bottom-right-radius: 10px;
 }
 /*** Blog End ***/
 
