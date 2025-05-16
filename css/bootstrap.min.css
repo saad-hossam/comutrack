@@ -8353,7 +8353,7 @@ fieldset:disabled .btn {
 }
 
 .text-secondary {
-    color: #6f35fb !important
+    color: #dc3545 !important
 }
 
 .text-success {
@@ -8503,7 +8503,11 @@ fieldset:disabled .btn {
 }
 
 .rounded-pill {
-    border-radius: 50rem !important
+    border-radius: 50rem !important;
+    -webkit-border-radius: 50rem !important;
+    -moz-border-radius: 50rem !important;
+    -ms-border-radius: 50rem !important;
+    -o-border-radius: 50rem !important;
 }
 
 .rounded-top {
