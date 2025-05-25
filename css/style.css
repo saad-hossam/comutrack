@@ -555,7 +555,7 @@ p{
 }
 
 .feature .feature-item:hover .feature-content h5 {
-    color: var(--bs-dark);
+    /* color: var(--bs-dark); */
 }
 /*** Feature End ***/
 
@@ -598,8 +598,10 @@ p{
     height: 44px;
     border-radius: 50%;
     transition: 0.5s;
-    
-
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
 }
 
 .video .btn-play:before {
@@ -616,6 +618,10 @@ p{
     border-radius: 50%;
     animation: pulse-border 1500ms ease-out infinite;
     transition: 0.5s;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
 }
 
 .video .btn-play:after {
@@ -1055,6 +1061,10 @@ p{
     margin-top: 8px;
     margin-left: -100px;
     border: 1px solid var(--bs-white) !important;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
 }
 
 .contact .section-title .sub-style::after {
@@ -1067,6 +1077,10 @@ p{
     margin-bottom: 5px;
     margin-left: -50px;
     border: 1px solid var(--bs-white) !important;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
 }
 
 .contact .section-title .sub-title {
@@ -1086,6 +1100,10 @@ p{
     margin-top: 8px;
     margin-right: -100px;
     border: 1px solid var(--bs-white) !important;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
 }
 
 .contact .section-title .sub-title::after {
@@ -1098,13 +1116,17 @@ p{
     margin-bottom: 8px;
     margin-right: -50px;
     border: 1px solid var(--bs-white) !important;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
 }
 /*** Contact End ***/
 
 
 /*** Footer Start ***/
 .footer {
-    background: linear-gradient(#2d92ab, #faf9fb), url(../img/slide3-home1.jpg);
+    background: linear-gradient(#2d92ab, #a282c1), url(../img/slide3-home1.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
